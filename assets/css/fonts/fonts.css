@@ -1,0 +1,43 @@
+/* Inter 字体定义 - 使用重命名后的文件 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url('../fonts/inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600; /* SemiBold */
+    src: url('../fonts/inter/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url('../fonts/inter/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800; /* ExtraBold */
+    src: url('../fonts/inter/Inter-ExtraBold.ttf') format('truetype');
+}
+
+/* Noto Sans SC 字体定义 */
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url('../fonts/noto-sans-sc/NotoSansSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url('../fonts/noto-sans-sc/NotoSansSC-Bold.ttf') format('truetype');
+}

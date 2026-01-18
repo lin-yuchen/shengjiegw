@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升捷發展有限公司 | 全方位香港劳务外包与物流解决方案</title>
+    
+    <!-- 本地 Font Awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome/all.min.css">
+    
+    <!-- 本地字体 -->
+    <link rel="stylesheet" href="assets/css/fonts/fonts.css">
+    
+    <!-- 本地样式 -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* 只保留CSS变量和动画 */
+        :root {
+            --primary: #0d1b2a;
+            --secondary: #1b4965;
+            --accent: #00b4d8;
+            --highlight: #90e0ef;
+            --light: #ffffff;
+            --gray: #e9ecef;
+            --dark: #0d1b2a;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+        
+        /* 轮播图图片路径 - 本地图片 */
+        .slide-1 { --bg-image: url('../images/slides/slide-1.jpg'); }
+        .slide-2 { --bg-image: url('../images/slides/slide-2.jpg'); }
+        .slide-3 { --bg-image: url('../images/slides/slide-3.jpg'); }
+        .slide-4 { --bg-image: url('../images/slides/slide-4.jpg'); }
+        .slide-5 { --bg-image: url('../images/slides/slide-5.jpg'); }
+    </style>
+</head>
+<body>
+    <!-- 返回顶部按钮 -->
+    <a href="#carousel" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- 导航栏 -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#carousel" class="logo">
+                    <img class="site-logo" src="assets/logo/公司LOGO.png" alt="升捷發展有限公司 LOGO">
+                    <div class="logo-text">
+                        <span class="logo-main">升捷發展有限公司</span>
+                        <span class="logo-sub">GALAXY ELITE DEVELOPMENT LIMITED </span>
+                    </div>
+                </a>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#carousel" class="active">首页</a></li>
+                    <li><a href="details/company.html">关于我们</a></li>
+                    <li><a href="#services">服务项目</a></li>
+                    <li><a href="#network">运输网络</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播图区域 -->
+    <section class="carousel" id="carousel">
+        <div class="carousel-inner">
+            <!-- 第一张幻灯片 -->
+            <div class="carousel-slide slide-1 active">
+                <div class="container">
+                    <div class="slide-content">
+                        <h1>以人力资源为核心，助力<span class="no-break">企业</span><br><span class="highlight">在香港高效扩张</span></h1>
+                        <p>升捷發展有限公司将人力资源与劳务外包作为主营方向，专注为雇主解决在港招聘、培训与合规的高额成本与管理负担。我们的物流与配送服务作为配套支撑，确保企业入驻香港与开展最后一公里业务时，无需承担冗余人力成本。</p>
+                        <div class="carousel-buttons">
+                            <a href="details/service-1.html" class="btn">
+                                <i class="fas fa-briefcase"></i>
+                                探索服务
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-phone-alt"></i>
+                                立即咨询
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第二张幻灯片 -->
+            <div class="carousel-slide slide-2">
+                <div class="container">
+                    <div class="slide-content">
+                        <h1>企业级人力资源与<br><span class="highlight">劳务外包服务</span></h1>
+                        <p>我们的核心能力在于快速为企业在香港组建合规、可运维的员工团队：包括大批量招聘、岗前培训、班次排班与绩效管理。我们替企业承担人力管理责任，让客户能把精力放在业务增长上。</p>
+                        <div class="carousel-buttons">
+                            <a href="details/service-2.html" class="btn">
+                                <i class="fas fa-users"></i>
+                                人力资源服务
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-question-circle"></i>
+                                了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第三张幻灯片 -->
+            <div class="carousel-slide slide-3">
+                <div class="container">
+                    <div class="slide-content">
+                        <h1>最后一公里配送与<br><span class="highlight">人力劳务支持</span></h1>
+                        <p>我们的配送网络覆盖全港18区，同时提供配送人力的招聘与管理外包。对电商与零售客户，我们不仅提供运力，也承接配送团队的招聘、培训与现场管理，降低客户的人力运营成本。</p>
+                        <div class="carousel-buttons">
+                            <a href="details/service-3.html" class="btn">
+                                <i class="fas fa-truck"></i>
+                                物流配送服务
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-question-circle"></i>
+                                了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第四张幻灯片 -->
+            <div class="carousel-slide slide-4">
+                <div class="container">
+                    <div class="slide-content">
+                        <h1>打板与仓储人力<br><span class="highlight">与流程支持</span></h1>
+                        <p>在打板与仓储环节，我们不仅提供设施，还为客户匹配现场作业团队、排班与质量控制流程。通过人力外包与流程优化，帮助客户提升装箱效率与降低现场管理成本。</p>
+                        <div class="carousel-buttons">
+                            <a href="details/service-4.html" class="btn">
+                                <i class="fas fa-boxes"></i>
+                                打板包装服务
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-question-circle"></i>
+                                了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第五张幻灯片 -->
+            <div class="carousel-slide slide-5">
+                <div class="container">
+                    <div class="slide-content">
+                        <h1>跨境运输与人力协同<br><span class="highlight">连接香港、内地与澳门</span></h1>
+                        <p>我们的跨境运输服务结合司机与客服的人力外包能力，确保节假日与高峰期也能稳定供给运输人手，帮助客户保持通关与配送时效。</p>
+                        <div class="carousel-buttons">
+                            <a href="details/service-5.html" class="btn">
+                                <i class="fas fa-globe-asia"></i>
+                                跨境运输服务
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-question-circle"></i>
+                                了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 左右箭头放在图片两侧 -->
+        <button class="carousel-arrow prev" id="carouselPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <button class="carousel-arrow next" id="carouselNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- 轮播图底部控制区域 -->
+        <div class="carousel-controls">
+            <div class="carousel-indicators" id="carouselIndicators">
+                <button class="carousel-indicator active" data-slide="0"></button>
+                <button class="carousel-indicator" data-slide="1"></button>
+                <button class="carousel-indicator" data-slide="2"></button>
+                <button class="carousel-indicator" data-slide="3"></button>
+                <button class="carousel-indicator" data-slide="4"></button>
+            </div>
+            
+            <button class="carousel-autoplay" id="carouselAutoplay">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        
+        <!-- 向下滚动指示器 -->
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- 关于我们部分 
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>关于香港升捷發展有限公司</h2>
+                    <p>香港升捷發展有限公司成立于2017年，总部位于香港，为企业提供专业的劳务与综合物流服务。我们的主营业务涵盖人力资源外包、仓储与打板、最后一公里配送，以及中港/港澳跨境运输。</p>
+                    <p>我们专注于通过本地化运营与数据驱动的流程优化，帮助客户提升效率、降低成本并保证合规性。我们的案例覆盖零售、电商、制造与第三方物流等行业。</p>
+
+                    <div style="margin-top:18px">
+                        <a href="details/company.html" class="btn">了解公司详情</a>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">行业经验</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">企业客户</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">客户满意度</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    < 公司图片已按要求移除 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务部分 -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>专业服务</h2>
+                <p>我们致力于为客户提供全面、高效、可靠的劳务与物流解决方案，助力企业实现业务增长和效率提升</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-1.jpg" alt="团队" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>香港劳务外包与人力资源</h3>
+                        <p>以人力资源为核心，提供大规模招聘、岗前培训、薪酬代发和现场人事管理，帮助雇主在香港快速部署团队并降低用人成本与合规风险。</p>
+                        <p class="case"><strong></strong></p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 专业人才招聘与筛选</li>
+                            <li><i class="fas fa-check-circle"></i> 薪酬福利管理外包</li>
+                            <li><i class="fas fa-check-circle"></i> 员工培训与发展</li>
+                            <li><i class="fas fa-check-circle"></i> 劳动法规咨询</li>
+                        </ul>
+                        <a href="details/service-1.html" class="service-link">了解更多详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-2.jpg" alt="运输" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>香港宅配与城市配送（人力外包支持）</h3>
+                        <p>覆盖香港全境的最后一公里配送，我们同时提供配送团队的人力外包与管理，承担招聘、排班与现场督导，降低客户的用工与管理压力。</p>
+                        <p class="case"><strong>成功案例：</strong>支持某电商平台外包配送团队，负责排班与绩效管理后，退件率下降20%，配送满意度显著提升。</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 自提点</li>
+                            <li><i class="fas fa-check-circle"></i> XXXXX</li>
+                            <li><i class="fas fa-check-circle"></i> XXXXXXX</li>
+                            <li><i class="fas fa-check-circle"></i> XXXXXXX</li>
+                        </ul>
+                        <a href="details/service-2.html" class="service-link">了解更多详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-3.jpg" alt="打包" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>香港打板与仓储人力支持</h3>
+                        <p>为仓储与装运环节提供操作团队与流程管理，我们负责现场人力的招聘与培训，确保出货效率与品质控制，减少企业现场管理负担。</p>
+                        <p class="case"><strong>成功案例：</strong>为生产企业提供现场装箱与打板团队，优化后装箱效率提升25%，装运差错率下降。</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 标准化货物打板</li>
+                            <li><i class="fas fa-check-circle"></i> 香港本地提货</li>
+                            <li><i class="fas fa-check-circle"></i> 货物分拣与标签</li>
+                            <li><i class="fas fa-check-circle"></i> 仓储管理服务</li>
+                        </ul>
+                        <a href="details/service-3.html" class="service-link">了解更多详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-4.jpg" alt="海运" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>中港跨境运输（含人力运维）</h3>
+                        <p>提供中港陆运与跨境运输服务，并可为客户配备驾驶与地勤团队的人力外包服务，确保节假日与旺季运输能力稳定。</p>
+                        <p class="case"><strong>成功案例：</strong>为跨境电商客户在黑五周期间配备临时运输与仓储人手，保证了关口通关顺畅与交付时效。</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 中港陆路运输</li>
+                            <li><i class="fas fa-check-circle"></i> 香港存柜服务</li>
+                            <li><i class="fas fa-check-circle"></i> 实时在线客服</li>
+                            <li><i class="fas fa-check-circle"></i> 报关清关服务</li>
+                        </ul>
+                        <a href="details/service-4.html" class="service-link">了解更多详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">05</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-5.jpg" alt="桥梁" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>港澳运输与末端人力支持</h3>
+                        <p>提供香港至澳门的跨境运输服务，并在终端提供派送与客服的人力外包支持，帮助连锁与零售客户快速展开本地服务。</p>
+                        <p class="case"><strong>成功案例：</strong>为连锁零售客户在澳门开店期间提供本地派送与后勤人员，显著缩短店铺上线时间。</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 港澳大桥陆路运输</li>
+                            <li><i class="fas fa-check-circle"></i> 海运快速通道</li>
+                            <li><i class="fas fa-check-circle"></i> 澳门清关服务</li>
+                            <li><i class="fas fa-check-circle"></i> 仓到仓配送</li>
+                        </ul>
+                        <a href="details/service-5.html" class="service-link">了解更多详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-number">06</div>
+                    <div class="service-image">
+                        <div class="service-image-content">
+                            <img class="card-img" src="assets/images/services/service-6.jpg" alt="客服" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>定制化人力与物流解决方案</h3>
+                        <p>根据客户业务场景定制人力配置与物流配套，从入港人员配置到末端配送与客户服务一体化交付，帮助企业零成本扩张市场。</p>
+                        <p class="case"><strong>成功案例：</strong>为品牌客户整合入港人力、仓储与配送资源，3周内完成香港市场的快速启动，支持其成功首月达成销售目标。</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> 业务流程分析</li>
+                            <li><i class="fas fa-check-circle"></i> 定制化解决方案设计</li>
+                            <li><i class="fas fa-check-circle"></i> 项目实施与管理</li>
+                            <li><i class="fas fa-check-circle"></i> 持续优化与支持</li>
+                        </ul>
+                        <a href="details/service-6.html" class="service-link">联系我们定制 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 运输网络部分 -->
+    <section class="network" id="network">
+        <div class="container">
+            <div class="section-title">
+                <h2>全球运输网络</h2>
+                <p>我们的运输网络覆盖香港、珠三角及澳门地区，提供高效可靠的跨境物流解决方案</p>
+            </div>
+            
+            <div class="network-grid">
+                <div class="network-card">
+                    <div class="network-icon">
+                        <img class="card-img" src="assets/images/network/network-1.jpg" alt="本地网络" loading="lazy">
+                    </div>
+                    <h3>香港本地网络</h3>
+                    <p>覆盖全港18区的配送人力网络，包括葵青区打板操作仓，中港货运司机，帮助企业一站式服务</p>
+                </div>
+                
+                <div class="network-card">
+                    <div class="network-icon">
+                        <img class="card-img" src="assets/images/network/network-2.jpg" alt="公路" loading="lazy">
+                    </div>
+                    <h3>中港运输通道</h3>
+                    <p>连接香港与珠三角地区的主要陆路通道，提供快速通关和仓到仓运输服务</p>
+                </div>
+                
+                <div class="network-card">
+                    <div class="network-icon">
+                        <img class="card-img" src="assets/images/network/network-3.jpg" alt="桥梁" loading="lazy">
+                    </div>
+                    <h3>港澳运输通道</h3>
+                    <p>通过港珠澳大桥连接香港与澳门，提供快速陆路运输服务，3-5小时内送达</p>
+                </div>
+                
+                <div class="network-card">
+                    <div class="network-icon">
+                        <img class="card-img" src="assets/images/network/network-4.jpg" alt="海运" loading="lazy">
+                    </div>
+                    <h3>珠三角卡运</h3>
+                    <p>覆盖佛山、肇庆、珠海、深圳、东莞等地，提供灵活高效的卡车运输服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势部分 -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">我们的优势</h2>
+                <p style="color: rgba(255,255,255,0.8);">选择香港升捷發展有限公司，享受专业、高效、可靠的劳务与物流服务</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-1.jpg" alt="可靠" loading="lazy">
+                    </div>
+                    <h3>专业可靠</h3>
+                    <p>拥有10年以上行业经验，专业团队确保服务质量和可靠性</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-2.jpg" alt="高效" loading="lazy">
+                    </div>
+                    <h3>高效快速</h3>
+                    <p>优化运营流程，提供快速响应和高效执行，节省您的时间</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-3.jpg" alt="合作" loading="lazy">
+                    </div>
+                    <h3>客户至上</h3>
+                    <p>以客户需求为中心，提供个性化解决方案和优质服务体验</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-4.jpg" alt="合作" loading="lazy">
+                    </div>
+                    <h3>客户至上</h3>
+                    <p>以客户需求为中心，提供个性化解决方案和优质服务体验</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-5.jpg" alt="合作" loading="lazy">
+                    </div>
+                    <h3>客户至上</h3>
+                    <p>以客户需求为中心，提供个性化解决方案和优质服务体验</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <!-- 图已移除 -->
+                    </div>
+                    <h3>业务成熟</h3>
+                    <p>司机团队经验丰富，能够快速适应各种运输KPI需求</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <!-- 图已移除 -->
+                    </div>
+                    <h3>网络覆盖广</h3>
+                    <p>覆盖香港、中国大陆及澳门的广泛服务网络</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img class="card-img" src="assets/images/advantages/advantage-6.jpg" alt="客服支持" loading="lazy">
+                    </div>
+                    <h3>24*7支持</h3>
+                    <p>全天候客户服务支持，随时解决您的问题和需求</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作厂商 / 合作伙伴 -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>合作厂商</h2>
+                <p>我们与多家知名企业合作</p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card"><img src="assets/images/partners/shein.png" alt="SHEIN" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/cainiao.gif" alt="菜鸟" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/ouhua.png" alt="欧华" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/sf-express.png" alt="SF Express" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/honghaihui.png" alt="鸿海汇" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/pdd.png" alt="PDD" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们部分 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>联系我们</h2>
+                    <p>如果您对我们的服务有任何疑问或需要咨询，请随时与我们联系。我们的专业团队将尽快为您提供帮助</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>公司地址</h4>
+                                <p>香港xxxxxx</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>联系电话</h4>
+                                <p>+852 95790010 (办公室)<br>+86 13042079996 (24小时客服)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>电子邮箱</h4>
+                                <p>postmaster@r-quick.cn<br>Elina@r-quick.cn(客服)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>办公时间</h4>
+                                <p>周一至周五: 9:00 - 18:00<br>周六: 9:00 - 14:00<br>周日及公众假期休息</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 小地图与联系电话 -->
+                    <div class="contact-map-phone" style="margin-top:22px; display:flex; gap:18px; align-items:center;">
+                        <div class="contact-map" style="flex:0 0 280px;">
+                            <div class="contact-map-inner" style="width:280px;height:180px;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.08)">
+                                <iframe id="companyMap" class="map-iframe" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;height:100%;border:0"></iframe>
+                            </div>
+                        </div>
+                        <div class="contact-map-info" style="flex:1; min-width:180px;">
+                            <h4 style="margin:0 0 6px">服务覆盖</h4>
+                            <p style="margin:0 0 10px;color:#555">香港、中国内地及澳门</p>
+                            <h4 style="margin:0 0 6px">客服热线</h4>
+                            <p style="font-size:1.15rem; font-weight:700; margin:0;">+852 95790010</p>
+                            <div style="margin-top:10px;color:#777;font-size:0.92rem">工作时间：周一至周五 9:00 - 18:00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form chat-widget">
+                    <h3>在线咨询（AI 助手）</h3>
+
+                    <div id="chatWindow" class="chat-window" aria-live="polite" role="log">
+                        <!-- messages will be appended here -->
+                    </div>
+
+                    <div class="chat-input-row">
+                        <input id="chatInput" type="text" class="form-control" placeholder="请在此输入问题，例如：如何合作？" aria-label="输入消息">
+                        <button id="chatSend" class="btn" type="button">发送</button>
+                    </div>
+
+                    <div class="chat-note" style="margin-top:10px;font-size:0.92rem;color:#666">提示：现在为页面本地模拟 AI 回复。如需接入真实 AI，请在脚本中替换模拟函数或使用后端代理。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img class="site-logo" src="assets/logo/公司LOGO.png" alt="升捷發展有限公司 LOGO">
+                        <span>升捷發展有限公司</span>
+                    </div>
+                    <p>我们是一家专业的劳务与物流服务提供商，专注于香港劳务外包、人力资源、宅配城配、打板及跨境运输服务，致力于为客户提供全方位解决方案</p>
+                    <div class="social-icons">
+                        <a href="#" class="qr-link" data-img="assets/qr/qr_wechat_friend.png" title="微信加好友">
+                            <i class="fab fa-weixin" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
+                        </a>
+                        <a href="#" class="qr-link" data-img="assets/qr/qr_whatsapp.png" title="WhatsApp 联系">
+                            <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
+                        </a>
+                        <a href="#" class="qr-link" data-img="assets/qr/qr_wechat_official.png" title="微信公众号">
+                            <i class="fab fa-weixin" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
+                        </a>
+                        <a href="#" class="qr-link" data-img="assets/qr/qr_xiaohongshu.png" title="小红书">
+                            <i class="fas fa-book" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#carousel">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#network">运输网络</a></li>
+                        <li><a href="#advantages">我们的优势</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>联系信息</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 香港与中国内地及澳门</p>
+                    <p><i class="fas fa-phone"></i> +852 95790010 </p>
+                    <p><i class="fas fa-fax"></i> +852 95790010</p>
+                    <p><i class="fas fa-envelope"></i> postmaster@r-quick.cn</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 升捷發展有限公司. 版权所有.</p>
+                <div>
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">隐私政策</a>
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">使用条款</a>
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">网站地图</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片模态（用于页脚二维码预览） -->
+    <div id="imgModal" class="img-modal" aria-hidden="true" role="dialog" aria-label="图片预览">
+        <div class="img-modal-backdrop" data-action="close"></div>
+        <div class="img-modal-panel">
+            <button class="img-modal-close" aria-label="关闭">&times;</button>
+            <img id="imgModalImg" src="" alt="二维码预览">
+            <div class="img-modal-caption" id="imgModalCaption"></div>
+        </div>
+    </div>
+
+    <!-- 引入本地JavaScript文件 -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
+    <script src="assets/js/map.js"></script>
+    
+    <style>
+        /* 简单的 modal 样式，局部放在 body 末尾以避免修改 head 区域 */
+        .img-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 3000; }
+        .img-modal.open { display: flex; }
+        .img-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+        .img-modal-panel { position: relative; max-width: min(90vw,420px); width: 100%; background: #fff; padding: 12px; border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); z-index: 1; display:flex; flex-direction:column; align-items:center; gap:8px; }
+        .img-modal-panel img { width: 100%; height: auto; border-radius:6px; }
+        .img-modal-close { position: absolute; top:6px; right:8px; background: transparent; border: none; font-size:1.6rem; cursor:pointer; color:#333; }
+        .img-modal-caption { font-size:0.9rem; color:#555; text-align:center; }
+        @media (max-width:480px) { .img-modal-panel { max-width: 96vw; padding: 10px; } }
+    </style>
+</body>
+</html>
