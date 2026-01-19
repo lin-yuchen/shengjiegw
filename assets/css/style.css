@@ -700,9 +700,26 @@ header.scrolled {
 
 .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* 默认移动端：1列 */
+    grid-template-columns: 1fr;
     gap: 40px;
     margin-top: 60px;
+}
+
+/* 平板端：2列 */
+@media (min-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 桌面端：固定3列布局（3+3） */
+@media (min-width: 1024px) {
+    .advantages-grid {
+        /* 固定3列布局 */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
 }
 
 .advantage-card {
@@ -735,7 +752,6 @@ header.scrolled {
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
-
 /* 关于我们部分 */
 .about {
     padding: 120px 0;
