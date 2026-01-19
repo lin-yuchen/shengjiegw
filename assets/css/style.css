@@ -720,6 +720,11 @@ header.scrolled {
         /* 固定3列布局 */
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        
+        /* 可选：限制容器最大宽度，确保6个卡片在两行中整齐排列 */
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
