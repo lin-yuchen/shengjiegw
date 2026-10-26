@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = ["index.html", "404.html", "privacy.html"] + [
+PAGES = ["index.html", "404.html", "privacy.html", "sitemap.html"] + [
     "details/" + p.name for p in sorted((ROOT / "details").glob("*.html"))
 ]
 
