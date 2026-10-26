@@ -44,7 +44,7 @@
                     resolve('您可以拨打我们的客服热线：+852 95790010，或发送邮件至 postmaster@r-quick.cn。');
                 }
                 else if (lower.indexOf('地址') !== -1) {
-                    resolve('我们的公司地址在香港xxxxxx。具体位置可以查看页面底部的地图。');
+                    resolve('我们位于香港，服务网络覆盖全港 18 区及中港、港澳线路。具体办公地址与到访安排，请致电 +852 95790010 或邮件 Elina@r-quick.cn。');
                 }
                 else if (lower.indexOf('时间') !== -1 || lower.indexOf('办公') !== -1) {
                     resolve('办公时间：周一至周五 9:00 - 18:00，周六 9:00 - 14:00，周日及公众假期休息。');

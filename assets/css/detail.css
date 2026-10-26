@@ -1,0 +1,213 @@
+/* 详情页专用样式：与首页同一套品牌色，信息密度更高 */
+
+:root {
+    --primary: #0d1b2a;
+    --secondary: #1b4965;
+    --accent: #00b4d8;
+    --highlight: #90e0ef;
+    --ink: #1f2d3d;
+    --muted: #5b6b7b;
+    --line: #e6edf3;
+    --bg: #f6f8fb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans SC', 'Inter', 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+    color: var(--ink);
+    line-height: 1.78;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--secondary); }
+
+/* 头部 */
+.dp-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(13, 27, 42, 0.97);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 14px rgba(13, 27, 42, 0.16);
+}
+
+.dp-header .inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.dp-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.dp-brand img { display: block; width: 40px; height: 40px; }
+
+.dp-brand small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    color: var(--highlight);
+}
+
+.dp-nav { display: flex; gap: 20px; font-size: 0.94rem; }
+
+.dp-nav a { color: #cfe8f3; text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+.dp-nav a:hover { color: #fff; }
+.dp-nav a.is-current { color: #fff; border-bottom-color: var(--accent); }
+
+/* 主体 */
+.dp-main { max-width: 1040px; margin: 0 auto; padding: 26px 20px 72px; }
+
+.dp-crumb { font-size: 0.86rem; color: var(--muted); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dp-crumb a { color: var(--muted); text-decoration: none; }
+.dp-crumb a:hover { color: var(--accent); }
+.dp-crumb .sep { color: #c3d0da; }
+
+h1 { font-size: 2.05rem; line-height: 1.32; margin: 0 0 14px; color: var(--primary); letter-spacing: -0.01em; }
+
+.dp-lead {
+    font-size: 1.1rem;
+    color: #3a4a5a;
+    margin: 0 0 8px;
+    padding: 18px 20px;
+    background: var(--bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+}
+
+.dp-grid { display: grid; grid-template-columns: minmax(0, 1fr) 296px; gap: 40px; align-items: start; }
+
+h2 { font-size: 1.32rem; margin: 36px 0 12px; color: var(--primary); }
+
+.dp-list { list-style: none; padding: 0; margin: 0; }
+
+.dp-list li { position: relative; padding: 9px 0 9px 26px; border-bottom: 1px dashed var(--line); color: #35485a; }
+.dp-list li:last-child { border-bottom: 0; }
+.dp-list li::before { content: "✓"; position: absolute; left: 0; top: 9px; color: var(--accent); font-weight: 700; }
+
+.dp-steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+
+.dp-steps li {
+    counter-increment: step;
+    position: relative;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px 14px 56px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.dp-steps li strong { color: var(--primary); font-size: 1rem; }
+
+.dp-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #04222b;
+    font-weight: 700;
+    font-size: 0.86rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 转化区 */
+.dp-cta {
+    margin-top: 40px;
+    padding: 26px 24px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b4965 100%);
+    color: #fff;
+}
+
+.dp-cta h2 { color: #fff; margin: 0 0 8px; font-size: 1.25rem; }
+.dp-cta p { margin: 0 0 16px; color: rgba(255, 255, 255, 0.82); font-size: 0.95rem; }
+
+.dp-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #04222b;
+    font-weight: 700;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.dp-btn-ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.55); margin-left: 10px; }
+.dp-btn:hover { filter: brightness(1.06); }
+.dp-btn-ghost:hover { background: rgba(255, 255, 255, 0.1); }
+
+/* 侧栏 */
+aside { display: flex; flex-direction: column; gap: 14px; }
+
+.dp-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-size: 0.92rem;
+}
+
+.dp-card h3 { margin: 0 0 10px; font-size: 1rem; color: var(--primary); }
+.dp-card p { margin: 0 0 7px; color: var(--muted); }
+.dp-card p i { color: var(--accent); width: 16px; }
+
+.dp-stat { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.dp-stat:last-child { border-bottom: 0; }
+.dp-stat .n { font-size: 1.25rem; font-weight: 700; color: var(--secondary); }
+.dp-stat .l { color: var(--muted); font-size: 0.86rem; }
+
+.dp-related { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+
+.dp-related a {
+    display: block;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.dp-related a:hover { border-color: var(--accent); color: var(--secondary); }
+
+/* 页脚 */
+.dp-footer { background: var(--primary); color: rgba(255, 255, 255, 0.7); font-size: 0.86rem; }
+.dp-footer .inner { max-width: 1040px; margin: 0 auto; padding: 22px 20px; }
+.dp-footer p { margin: 0 0 4px; }
+.dp-footer a { color: rgba(255, 255, 255, 0.85); text-decoration: none; }
+.dp-footer a:hover { color: var(--highlight); }
+
+@media (max-width: 900px) {
+    .dp-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    h1 { font-size: 1.62rem; }
+    .dp-nav { display: none; }
+    .dp-main { padding: 20px 16px 56px; }
+    .dp-leading { font-size: 1rem; }
+}

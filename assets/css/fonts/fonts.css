@@ -1,43 +1,42 @@
-/* Inter 字体定义 - 使用重命名后的文件 */
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400; /* Regular */
-    src: url('../fonts/inter/Inter-Regular.ttf') format('truetype');
-}
+/* 字体定义 —— 全部为本地 WOFF2 子集，由 tools/optimize_assets.py 生成。
+   改动页面文案后请运行该脚本重新生成，否则新增生僻字会回退到系统字体。 */
 
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600; /* SemiBold */
-    src: url('../fonts/inter/Inter-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700; /* Bold */
-    src: url('../fonts/inter/Inter-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800; /* ExtraBold */
-    src: url('../fonts/inter/Inter-ExtraBold.ttf') format('truetype');
-}
-
-/* Noto Sans SC 字体定义 */
 @font-face {
     font-family: 'Noto Sans SC';
     font-style: normal;
-    font-weight: 400; /* Regular */
-    src: url('../fonts/noto-sans-sc/NotoSansSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    src: url('NotoSansSC-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Noto Sans SC';
     font-style: normal;
-    font-weight: 700; /* Bold */
-    src: url('../fonts/noto-sans-sc/NotoSansSC-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    src: url('NotoSansSC-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('Inter-Bold.woff2') format('woff2');
 }

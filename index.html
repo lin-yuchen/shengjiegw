@@ -1,10 +1,35 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>升捷發展有限公司 | 全方位香港劳务外包与物流解决方案</title>
-    
+    <title>香港勞務外包與物流配送｜升捷發展有限公司</title>
+    <meta name="description" content="升捷發展有限公司（GALAXY ELITE DEVELOPMENT LIMITED）2017 年成立於香港，提供勞務外包、人力資源、倉儲打板、最後一公里配送，以及中港／港澳跨境運輸服務，助企業合規、低成本落地香港。">
+    <meta name="keywords" content="香港勞務外包,香港人力資源,香港招聘外包,香港倉儲,香港打板,香港宅配,中港運輸,港澳運輸,升捷發展有限公司">
+    <link rel="canonical" href="https://www.shengjiefazhan.com/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0d1b2a">
+
+    <!-- 社交平台分享卡片 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="升捷發展有限公司">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:title" content="香港勞務外包與物流配送｜升捷發展有限公司">
+    <meta property="og:description" content="勞務外包、人力資源、倉儲打板、最後一公里配送與中港／港澳跨境運輸，一站式助企業落地香港。">
+    <meta property="og:url" content="https://www.shengjiefazhan.com/">
+    <meta property="og:image" content="https://www.shengjiefazhan.com/assets/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- 图标 -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+    <link rel="apple-touch-icon" href="/assets/icon-180.png">
+
+    <!-- 首屏大图预加载 -->
+    <link rel="preload" as="image" href="assets/images/slides/slide-1.webp" fetchpriority="high">
+
     <!-- 本地 Font Awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome/all.min.css">
     
@@ -13,6 +38,39 @@
     
     <!-- 本地样式 -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "升捷發展有限公司",
+      "alternateName": "GALAXY ELITE DEVELOPMENT LIMITED",
+      "url": "https://www.shengjiefazhan.com/",
+      "logo": "https://www.shengjiefazhan.com/assets/icon-192.png",
+      "image": "https://www.shengjiefazhan.com/assets/images/og-cover.png",
+      "description": "香港劳务外包、人力资源、仓储打板、最后一公里配送及中港/港澳跨境运输服务商。",
+      "foundingDate": "2017",
+      "telephone": "+852-95790010",
+      "email": "postmaster@r-quick.cn",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "HK",
+        "addressRegion": "香港"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "香港" },
+        { "@type": "Place", "name": "澳门" },
+        { "@type": "Place", "name": "珠三角" }
+      ],
+      "knowsLanguage": ["zh-HK", "zh-CN"],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }]
+    }
+    </script>
     
     <style>
         /* 只保留CSS变量和动画 */
@@ -25,6 +83,9 @@
             --gray: #e9ecef;
             --dark: #0d1b2a;
         }
+
+        /* 锚点跳转时给固定导航栏留出让位 */
+        section[id] { scroll-margin-top: 84px; }
         
         @keyframes fadeInUp {
             from {
@@ -49,12 +110,12 @@
             }
         }
         
-        /* 轮播图图片路径 - 本地图片 */
-        .slide-1 { --bg-image: url('../images/slides/slide-1.jpg'); }
-        .slide-2 { --bg-image: url('../images/slides/slide-2.jpg'); }
-        .slide-3 { --bg-image: url('../images/slides/slide-3.jpg'); }
-        .slide-4 { --bg-image: url('../images/slides/slide-4.jpg'); }
-        .slide-5 { --bg-image: url('../images/slides/slide-5.jpg'); }
+        /* 轮播图图片路径 - 本地 WebP 图片 */
+        .slide-1 { --bg-image: url('/assets/images/slides/slide-1.webp'); }
+        .slide-2 { --bg-image: url('/assets/images/slides/slide-2.webp'); }
+        .slide-3 { --bg-image: url('/assets/images/slides/slide-3.webp'); }
+        .slide-4 { --bg-image: url('/assets/images/slides/slide-4.webp'); }
+        .slide-5 { --bg-image: url('/assets/images/slides/slide-5.webp'); }
     </style>
 </head>
 <body>
@@ -68,7 +129,7 @@
         <div class="container">
             <div class="nav-container">
                 <a href="#carousel" class="logo">
-                    <img class="site-logo" src="assets/logo/公司LOGO.png" alt="升捷發展有限公司 LOGO">
+                    <img class="site-logo" src="assets/logo/logo-96.webp" width="48" height="48" alt="升捷發展有限公司">
                     <div class="logo-text">
                         <span class="logo-main">升捷發展有限公司</span>
                         <span class="logo-sub">GALAXY ELITE DEVELOPMENT LIMITED </span>
@@ -224,7 +285,7 @@
         </a>
     </section>
 
-    <!-- 关于我们部分 
+    <!-- 关于我们部分 -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
@@ -252,9 +313,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    < 公司图片已按要求移除 -->
-                </div>
             </div>
         </div>
     </section>
@@ -272,7 +330,7 @@
                     <div class="service-number">01</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-1.jpg" alt="团队" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-1.webp" alt="团队" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -293,7 +351,7 @@
                     <div class="service-number">02</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-2.jpg" alt="运输" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-2.webp" alt="运输" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -314,7 +372,7 @@
                     <div class="service-number">03</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-3.jpg" alt="打包" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-3.webp" alt="打包" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -337,7 +395,7 @@
                     <div class="service-number">04</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-4.jpg" alt="海运" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-4.webp" alt="海运" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -358,7 +416,7 @@
                     <div class="service-number">05</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-5.jpg" alt="桥梁" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-5.webp" alt="桥梁" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -379,7 +437,7 @@
                     <div class="service-number">06</div>
                     <div class="service-image">
                         <div class="service-image-content">
-                            <img class="card-img" src="assets/images/services/service-6.jpg" alt="客服" loading="lazy">
+                            <img class="card-img" src="assets/images/services/service-6.webp" alt="客服" loading="lazy">
                         </div>
                     </div>
                     <div class="service-content">
@@ -410,7 +468,7 @@
             <div class="network-grid">
                 <div class="network-card">
                     <div class="network-icon">
-                        <img class="card-img" src="assets/images/network/network-1.jpg" alt="本地网络" loading="lazy">
+                        <img class="card-img" src="assets/images/network/network-1.webp" alt="本地网络" loading="lazy">
                     </div>
                     <h3>香港本地网络</h3>
                     <p>覆盖全港18区的配送人力网络，包括葵青区打板操作仓，中港货运司机，帮助企业一站式服务</p>
@@ -418,7 +476,7 @@
                 
                 <div class="network-card">
                     <div class="network-icon">
-                        <img class="card-img" src="assets/images/network/network-2.jpg" alt="公路" loading="lazy">
+                        <img class="card-img" src="assets/images/network/network-2.webp" alt="公路" loading="lazy">
                     </div>
                     <h3>中港运输通道</h3>
                     <p>连接香港与珠三角地区的主要陆路通道，提供快速通关和仓到仓运输服务</p>
@@ -426,7 +484,7 @@
                 
                 <div class="network-card">
                     <div class="network-icon">
-                        <img class="card-img" src="assets/images/network/network-3.jpg" alt="桥梁" loading="lazy">
+                        <img class="card-img" src="assets/images/network/network-3.webp" alt="桥梁" loading="lazy">
                     </div>
                     <h3>港澳运输通道</h3>
                     <p>通过港珠澳大桥连接香港与澳门，提供快速陆路运输服务，3-5小时内送达</p>
@@ -434,7 +492,7 @@
                 
                 <div class="network-card">
                     <div class="network-icon">
-                        <img class="card-img" src="assets/images/network/network-4.jpg" alt="海运" loading="lazy">
+                        <img class="card-img" src="assets/images/network/network-4.webp" alt="海运" loading="lazy">
                     </div>
                     <h3>珠三角卡运</h3>
                     <p>覆盖佛山、肇庆、珠海、深圳、东莞等地，提供灵活高效的卡车运输服务</p>
@@ -454,7 +512,7 @@
             <div class="advantages-grid">
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-1.jpg" alt="可靠" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-1.webp" alt="可靠" loading="lazy">
                     </div>
                     <h3>专业可靠</h3>
                     <p>拥有10年以上行业经验，专业团队确保服务质量和可靠性</p>
@@ -462,7 +520,7 @@
                 
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-2.jpg" alt="高效" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-2.webp" alt="高效" loading="lazy">
                     </div>
                     <h3>高效快速</h3>
                     <p>优化运营流程，提供快速响应和高效执行，节省您的时间</p>
@@ -470,7 +528,7 @@
                 
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-3.jpg" alt="合作" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-3.webp" alt="合作" loading="lazy">
                     </div>
                     <h3>客户至上</h3>
                     <p>以客户需求为中心，提供个性化解决方案和优质服务体验</p>
@@ -478,7 +536,7 @@
                 
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-3.jpg" alt="合作" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-3.webp" alt="合作" loading="lazy">
                     </div>
                     <h3>业务成熟</h3>
                     <p>司机团队经验丰富，能够快速适应各种运输KPI需求</p>
@@ -486,7 +544,7 @@
                 
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-3.jpg" alt="合作" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-3.webp" alt="合作" loading="lazy">
                     </div>
                     <h3>网络覆盖广</h3>
                     <p>覆盖香港、中国大陆及澳门的广泛服务网络</p>
@@ -494,7 +552,7 @@
                 
                 <div class="advantage-card">
                     <div class="advantage-icon">
-                        <img class="card-img" src="assets/images/advantages/advantage-6.jpg" alt="客服支持" loading="lazy">
+                        <img class="card-img" src="assets/images/advantages/advantage-6.webp" alt="客服支持" loading="lazy">
                     </div>
                     <h3>24*7支持</h3>
                     <p>全天候客户服务支持，随时解决您的问题和需求</p>
@@ -512,12 +570,12 @@
             </div>
 
             <div class="partners-grid">
-                <div class="partner-card"><img src="assets/images/partners/shein.png" alt="SHEIN" loading="lazy"></div>
-                <div class="partner-card"><img src="assets/images/partners/cainiao.gif" alt="菜鸟" loading="lazy"></div>
-                <div class="partner-card"><img src="assets/images/partners/ouhua.png" alt="欧华" loading="lazy"></div>
-                <div class="partner-card"><img src="assets/images/partners/sf-express.png" alt="SF Express" loading="lazy"></div>
-                <div class="partner-card"><img src="assets/images/partners/honghaihui.png" alt="鸿海汇" loading="lazy"></div>
-                <div class="partner-card"><img src="assets/images/partners/pdd.png" alt="PDD" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/shein.webp" alt="SHEIN" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/cainiao.webp" alt="菜鸟" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/ouhua.webp" alt="欧华" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/sf-express.webp" alt="SF Express" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/honghaihui.webp" alt="鸿海汇" loading="lazy"></div>
+                <div class="partner-card"><img src="assets/images/partners/pdd.webp" alt="PDD" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -537,7 +595,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>公司地址</h4>
-                                <p>香港xxxxxx</p>
+                                <p>香港特别行政区<br><span style="color:#888;font-size:.9em">办公室到访请提前预约</span></p>
                             </div>
                         </div>
                         
@@ -600,8 +658,6 @@
                         <input id="chatInput" type="text" class="form-control" placeholder="请在此输入问题，例如：如何合作？" aria-label="输入消息">
                         <button id="chatSend" class="btn" type="button">发送</button>
                     </div>
-
-                    <div class="chat-note" style="margin-top:10px;font-size:0.92rem;color:#666">提示：现在为页面本地模拟 AI 回复。如需接入真实 AI，请在脚本中替换模拟函数或使用后端代理。</div>
                 </div>
             </div>
         </div>
@@ -613,7 +669,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img class="site-logo" src="assets/logo/公司LOGO.png" alt="升捷發展有限公司 LOGO">
+                        <img class="site-logo" src="assets/logo/logo-96.webp" width="48" height="48" alt="升捷發展有限公司">
                         <span>升捷發展有限公司</span>
                     </div>
                     <p>我们是一家专业的劳务与物流服务提供商，专注于香港劳务外包、人力资源、宅配城配、打板及跨境运输服务，致力于为客户提供全方位解决方案</p>
@@ -623,9 +679,6 @@
                         </a>
                         <a href="#" class="qr-link" data-img="assets/qr/qr_whatsapp.png" title="WhatsApp 联系">
                             <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
-                        </a>
-                        <a href="#" class="qr-link" data-img="assets/qr/qr_wechat_official.png" title="微信公众号">
-                            <i class="fab fa-weixin" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
                         </a>
                         <a href="#" class="qr-link" data-img="assets/qr/qr_xiaohongshu.png" title="小红书">
                             <i class="fas fa-book" aria-hidden="true" style="font-size:1.6rem;color:#fff"></i>
@@ -657,9 +710,8 @@
             <div class="copyright">
                 <p>&copy; 2026 升捷發展有限公司. 版权所有.</p>
                 <div>
-                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">隐私政策</a>
-                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">使用条款</a>
-                    <a href="#" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">网站地图</a>
+                    <a href="privacy.html" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">隐私政策</a>
+                    <a href="sitemap.xml" style="color: rgba(255,255,255,0.6); margin-left: 20px; text-decoration: none;">网站地图</a>
                 </div>
             </div>
         </div>

@@ -766,8 +766,10 @@ header.scrolled {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 880px;
+    margin: 0 auto;
+    gap: 40px;
     align-items: center;
 }
 
