@@ -829,7 +829,9 @@ header.scrolled {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 820px;
+    margin: 0 auto;
     gap: 60px;
 }
 

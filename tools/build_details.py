@@ -17,8 +17,8 @@ BASE = "https://www.shengjiefazhan.com"
 
 COMPANY = {
     "name": "升捷發展有限公司",
-    "phone_office": "+852 95790010",
-    "phone_cn": "+86 13042079996",
+    "phone": "+86 13042079996",
+    "tel": "+8613042079996",
     "email": "postmaster@r-quick.cn",
     "email_cs": "Elina@r-quick.cn",
 }
@@ -400,7 +400,7 @@ def render(s: dict) -> str:
                 <div class="dp-cta">
                     <h2>需要报价或落地方案？</h2>
                     <p>告诉我们业务场景与预计人数／货量，我们会在一个工作日内给出初步方案与费用结构。</p>
-                    <a class="dp-btn" href="tel:+85295790010"><i class="fas fa-phone-alt"></i> {COMPANY["phone_office"]}</a>
+                    <a class="dp-btn" href="tel:{COMPANY["tel"]}"><i class="fas fa-phone-alt"></i> {COMPANY["phone"]}</a>
                     <a class="dp-btn dp-btn-ghost" href="../index.html#contact">在线咨询</a>
                 </div>
             </article>
@@ -412,8 +412,7 @@ def render(s: dict) -> str:
                 </div>
                 <div class="dp-card">
                     <h3>联系我们</h3>
-                    <p><i class="fas fa-phone"></i> {COMPANY["phone_office"]}（办公室）</p>
-                    <p><i class="fas fa-phone"></i> {COMPANY["phone_cn"]}（24 小时）</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:{COMPANY["tel"]}" style="color:inherit;text-decoration:none">{COMPANY["phone"]}</a>（24 小时客服）</p>
                     <p><i class="fas fa-envelope"></i> {COMPANY["email"]}</p>
                     <p><i class="fas fa-clock"></i> 周一至周五 9:00–18:00</p>
                 </div>

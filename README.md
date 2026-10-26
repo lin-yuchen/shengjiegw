@@ -29,8 +29,6 @@ assets/
   css/fonts/          字体样式 + WOFF2 子集
   css/font-awesome/   图标库
   js/main.js          轮播、导航、二维码预览
-  js/chat.js          在线咨询（当前为本地模拟回复）
-  js/map.js           地图 iframe 初始化
   images/             WebP 图片（slides / network / services / advantages / partners）
   logo/               LOGO
   qr/                 微信、WhatsApp、小红书二维码
@@ -98,8 +96,8 @@ git revert <commit>
 
 ## 四、当前已知待办
 
-- 公司详细地址仍是「香港特别行政区（到访请提前预约）」，需补充真实地址与地图坐标（`assets/js/map.js` 顶部 `mapCenterLat/Lng`）。
-- 在线咨询为前端模拟回复，需接入真实客服或 AI（需后端代理，纯静态站无法直接存密钥）。
-- 地图使用 OpenStreetMap 内嵌，国内访问可能较慢，可换高德／百度静态图。
+- 公司详细地址仍是「香港特别行政区（到访请提前预约）」，需补充真实地址；地址确认后再放地图（原 OpenStreetMap 内嵌框已撤除，它指向中环且国内常打不开）。
+- 原有「在线咨询（AI 助手）」为前端模拟回复，已于 2026-10-26 移除；如需在线转化，建议改用表单或客服系统。
+- 全站电话已统一为 +86 13042079996（原香港号码 +852 95790010 已停用），如恢复香港线路需同步更新首页、7 个详情页、404 页、隐私页与 JSON-LD。
 - Font Awesome 图标库约 380KB，可进一步裁剪到只含实际使用的 20 余个图标。
 - 合作伙伴（SHEIN、菜鸟、顺丰、拼多多等）LOGO 的使用需确认已获授权。
