@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>货柜门 · 真实照片原型</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:'Noto Sans SC','Microsoft JhengHei',sans-serif;background:#0a1520}
+  .hero{position:relative;height:100vh;min-height:560px;overflow:hidden;perspective:2400px;perspective-origin:50% 50%}
+
+  /* 门后内容 */
+  .inside{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;
+          background:linear-gradient(180deg,rgba(6,18,28,.55),rgba(6,18,28,.85)),url('../assets/images/slides/slide-1.webp') center/cover no-repeat;
+          color:#fff;transition:transform 1.8s cubic-bezier(.2,.7,.2,1)}
+  .inside h1{font-size:clamp(1.8rem,4.2vw,3.4rem);line-height:1.25;margin:0 0 18px}
+  .inside h1 em{font-style:normal;color:#67d7ea}
+  .inside p{max-width:620px;color:rgba(255,255,255,.84);line-height:1.8;margin:0 0 26px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:12px 24px;border-radius:8px;background:#00b4d8;color:#04222b;font-weight:700;text-decoration:none}
+  .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+
+  /* 两扇门：真实照片，沿门缝对切 */
+  .leaf{position:absolute;inset:0;transform-style:preserve-3d;
+        transition:transform 1.45s cubic-bezier(.62,.02,.28,1);will-change:transform}
+  .leaf.left{transform-origin:left center}
+  .leaf.right{transform-origin:right center}
+
+  .face{position:absolute;inset:0;backface-visibility:hidden;
+        background-image:url('door-front.jpg');background-size:cover;background-position:center 38%;
+        filter:saturate(.94) contrast(1.03) brightness(.94)}
+  .leaf.left  .face{clip-path:inset(0 50% 0 0)}
+  .leaf.right .face{clip-path:inset(0 0 0 50%)}
+
+  /* 暗角，让照片融入深色首屏 */
+  .vignette{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:1;transition:opacity .9s ease;
+    background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,0) 38%,rgba(4,14,20,.55) 100%),
+               linear-gradient(180deg,rgba(4,14,20,.45),rgba(4,14,20,0) 22%,rgba(4,14,20,0) 72%,rgba(4,14,20,.6))}
+  .hero.open .vignette{opacity:0}
+
+  /* 门背面（开过 90° 后看到的那一面） */
+  .face.back{
+    transform:rotateY(180deg);
+    background-image:none;
+    background:linear-gradient(160deg,#3d5c46 0%,#2a4534 45%,#16281d 100%);
+    box-shadow:inset 0 0 140px rgba(0,0,0,.55);
+  }
+  .face.back::after{content:'';position:absolute;inset:0;opacity:.35;
+    background:repeating-linear-gradient(90deg,transparent 0 90px,rgba(255,255,255,.05) 90px 92px)}
+
+  .hero.open .leaf.left{transform:rotateY(-108deg)}
+  .hero.open .leaf.right{transform:rotateY(108deg)}
+  .hero.open .inside{transform:scale(1.03)}
+
+  /* 开门瞬间的光与尘 */
+  .flash{position:absolute;inset:0;z-index:4;pointer-events:none;
+         background:radial-gradient(ellipse at 50% 50%,rgba(190,235,250,.85),rgba(190,235,250,0) 55%);
+         opacity:0;transition:opacity .55s ease}
+  .hero.open .flash{animation:flash 1.1s ease forwards}
+  @keyframes flash{0%{opacity:0}18%{opacity:.55}100%{opacity:0}}
+
+  .hint{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);z-index:6;color:#fff;
+        font-size:.9rem;letter-spacing:.2em;display:flex;align-items:center;gap:10px;cursor:pointer;
+        text-shadow:0 2px 10px rgba(0,0,0,.7);animation:bob 2.2s ease-in-out infinite;transition:opacity .4s}
+  .hero.open .hint{opacity:0;pointer-events:none}
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-6px)}}
+
+  .replay{position:fixed;right:18px;bottom:18px;z-index:20;background:rgba(255,255,255,.12);color:#fff;
+          border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:8px 14px;font-size:.82rem;cursor:pointer}
+</style>
+</head>
+<body>
+<section class="hero" id="hero">
+  <div class="inside">
+    <h1>以人力资源为核心，<br>助力企业在<em>香港高效扩张</em></h1>
+    <p>升捷發展有限公司将人力资源与劳务外包作为主营方向，专注为雇主解决在港招聘、培训与合规的高额成本与管理负担。</p>
+    <div class="btns">
+      <a class="btn" href="#">探索服务</a>
+      <a class="btn ghost" href="#">立即咨询</a>
+    </div>
+  </div>
+
+  <div class="leaf left">
+    <div class="face front"></div>
+    <div class="face back"></div>
+  </div>
+  <div class="leaf right">
+    <div class="face front"></div>
+    <div class="face back"></div>
+  </div>
+
+  <div class="flash"></div>
+  <div class="vignette"></div>
+  <div class="hint" id="hint">点击开门 <span style="font-size:1.1rem">↓</span></div>
+</section>
+<button class="replay" id="replay">重播</button>
+
+<script>
+(function(){
+  var hero = document.getElementById('hero'), opened = false;
+  function open(){ if(opened) return; opened = true; hero.classList.add('open'); try{sessionStorage.setItem('heroOpened','1')}catch(e){} }
+  function close(){ opened = false; hero.classList.remove('open'); }
+  var seen=false; try{ seen = sessionStorage.getItem('heroOpened')==='1' }catch(e){}
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  hero.addEventListener('click', open);
+  window.addEventListener('keydown', open);
+  window.addEventListener('wheel', open, {passive:true, once:true});
+  document.getElementById('replay').addEventListener('click', function(e){ e.stopPropagation(); close(); setTimeout(open, 300); });
+  if (seen || reduce) open(); else setTimeout(open, 700);
+  window.__doors = { open: open, close: close };
+})();
+</script>
+</body>
+</html>
