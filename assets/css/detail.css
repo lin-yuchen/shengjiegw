@@ -211,3 +211,38 @@ aside { display: flex; flex-direction: column; gap: 14px; }
     .dp-main { padding: 20px 16px 56px; }
     .dp-leading { font-size: 1rem; }
 }
+
+/* ===== 手机端（详情页）===== */
+@media (max-width: 768px) {
+    .dp-header .inner { padding: 10px 16px; }
+    .dp-brand { font-size: .98rem; }
+    .dp-brand small { font-size: .56rem; letter-spacing: .06em; }
+    .dp-brand img { width: 34px; height: 34px; }
+
+    .dp-main { padding: 18px 16px 52px; }
+    .dp-crumb { font-size: .82rem; margin-bottom: 14px; }
+
+    h1 { font-size: 1.45rem; line-height: 1.38; margin-bottom: 10px; }
+    .dp-lead { font-size: .95rem; line-height: 1.72; padding: 14px 16px; }
+
+    h2 { font-size: 1.15rem; margin: 26px 0 10px; }
+    .dp-list li { font-size: .92rem; padding: 8px 0 8px 24px; }
+    .dp-list li::before { top: 8px; }
+    .dp-steps li { font-size: .9rem; padding: 12px 14px 12px 50px; }
+    .dp-steps li strong { font-size: .95rem; }
+    .dp-steps li::before { left: 14px; top: 13px; width: 24px; height: 24px; font-size: .8rem; }
+
+    .dp-cta { padding: 20px 18px; margin-top: 28px; }
+    .dp-cta h2 { font-size: 1.1rem; }
+    .dp-cta p { font-size: .9rem; }
+    .dp-btn { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; padding: 0 18px; }
+    .dp-btn-ghost { margin-left: 0; margin-top: 10px; }
+
+    .dp-card { padding: 14px 16px; font-size: .9rem; }
+    .dp-card h3 { font-size: .98rem; }
+    .dp-stat .n { font-size: 1.15rem; }
+    .dp-related a { min-height: 44px; display: flex; align-items: center; font-size: .9rem; }
+
+    .dp-footer .inner { padding: 18px 16px; font-size: .8rem; }
+    .dp-footer a { display: inline-flex; align-items: center; min-height: 40px; }
+}
