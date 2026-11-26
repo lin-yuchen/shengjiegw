@@ -411,7 +411,7 @@ def render(s: dict) -> str:
                 <div class="dp-card">
                     <h3>联系我们</h3>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:{COMPANY["email"]}" style="color:inherit;text-decoration:none">{COMPANY["email"]}</a></p>
-                    <p><i class="fab fa-weixin"></i> 微信 / WhatsApp 见页脚二维码</p>
+                    <p><i class="fab fa-weixin"></i> 微信咨询见页脚二维码</p>
                     <p><i class="fas fa-clock"></i> 周一至周五 9:00–18:00</p>
                 </div>
                 <div class="dp-card">
